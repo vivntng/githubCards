@@ -10,21 +10,21 @@ const testData = [
 ];
 
 const Form = () => {
-  // use ref by instantiating obj
-  // https://dmitripavlutin.com/react-useref-guide/#:~:text=inputRef%20is%20then%20assigned%20to,inputRef.current.focus()%20.
-  const userNameInput = React.useRef("");
-
+  const [username, setUsername] = useState(""); // create controlled component, since React is "controlling" the value of input
+  // controlled components may be preferred since React is aware of state change for EVERY SINGLE CHAR
+  // instead of when the submit button is clicked
   let handleSubmit = (e) => {
     e.preventDefault(); // prevents refreshing of page when event handled
-    console.log(userNameInput.current.value);
+    console.log(username);
   }
 
   return (
     <form onSubmit={handleSubmit}>
     <input 
       type="text"
+      value={username}
+      onChange={event => setUsername(event.target.value)}
       placeholder="GitHub Username"
-      ref={userNameInput}
       required
     />
     <button>Add Card</button>
