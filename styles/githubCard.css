@@ -1,0 +1,33 @@
+/* Nerdy secret: You can use "less" below! Don't tell anybody... */
+
+.githubProfile {
+	margin: 1rem;
+}
+
+.githubProfile img {
+  width: 75px;
+}
+
+.githubProfile .info {
+  display: inline-block;
+    margin-left: 12px;
+}
+
+.githubProfile .name {
+  font-size: 1.25rem;
+      font-weight: bold;
+}
+
+form {
+	border: thin solid #888;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+	text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
