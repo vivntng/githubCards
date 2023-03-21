@@ -1,0 +1,49 @@
+#cardList {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-auto-rows: 125px;
+}
+
+.githubProfile {
+	margin: 0.5rem;
+  padding: 1rem;
+  background-color: #ebecf0;
+  border-radius: 5px;
+}
+
+.githubProfile img {
+  width: 75px;
+}
+
+.githubProfile .info {
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.githubProfile .info .name {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+form {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+	text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#error {
+  color: red;
+  margin-left: 1rem;
+}
